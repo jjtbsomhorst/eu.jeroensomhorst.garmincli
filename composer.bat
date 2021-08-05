@@ -1,0 +1,1 @@
+docker run --rm --interactive --tty --volume C:\Users\jsomh\Projects\eu.jeroensomhorst.garmincli\www\:/app composer install
