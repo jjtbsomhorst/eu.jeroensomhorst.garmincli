@@ -12,7 +12,7 @@ use Symfony\Component\Console\Question\Question;
 class GarminCliCommand extends Command
 {
     private string $workingDir = '/var/www/html/garmin';
-    private array $exportTypes = [GarminConnectExtended::EXPORT_TYPE_ACTIVITIES,GarminConnectExtended::EXPORT_TYPE_SEGMENTS,GarminConnectExtended::EXPORT_TYPE_WORKOUTS];
+    private array $exportTypes = [GarminConnectExtended::EXPORT_TYPE_ACTIVITIES,GarminConnectExtended::EXPORT_TYPE_SEGMENTS];
     private array $exportSize = ['all','last 10'];
     private array $typesToExport = [];
     private string $whatToExport = 'all';
