@@ -4,26 +4,8 @@ services:
   web:
     image: "php:8.0.7-apache"
     restart: 'always'
-    depends_on:
-      - mariadb
     ports:
       - '80:80'
-    links:
-      - mariadb
     volumes:
       - ./www:/var/www/html/
       - C:/Users/jsomh/Documents/GarminExport:/var/www/html/garmin
-  mariadb:
-    image: "mariadb"
-    restart: 'always'
-    ports:
-      - '3306:3306'
-    volumes: 
-      - ./mariadb/data:/var/lib/mysql/data
-      - ./mariadb/logs:/var/lib/mysql/logs
-      - ./mariadb/conf:/var/lib/mysql/conf
-    environment:
-      MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_DATABASE: "garmin_cli"
-      MYSQL_USER: "root"
-      MYSQL_PASSWORD: "root"
