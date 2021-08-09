@@ -11,7 +11,7 @@ php bin/console garminexportcommand <username> <password>
 next there will be some questions to answer
 
 - Please specify working directory 
-- Which format to be used (fit, kml, gpx, txc )
+- Which format to be used (fit, kml, gpx, tcx )
 - What to export ( activities, segments)
  
 after this the command will try to login into garmin connect and to export the things specified. 
