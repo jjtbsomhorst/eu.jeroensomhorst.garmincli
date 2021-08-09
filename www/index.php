@@ -2,7 +2,7 @@
 require_once("vendor/autoload.php");
 require_once("GarminConnectExtended.php");
 
-$garminClient = new GarminConnectExtended(['username' => 'j.somhorst@gmail.com','password'=> 'upspA4zyf6HjdufLYVk9GVLhvsG8hsgK']);
+$garminClient = new GarminConnectExtended(['username' => '<username>','password'=> '<password>']);
 $garminClient->getActivityList();
 
 if(array_key_exists('type',$_GET) && $_GET['type'] == 'mysegments') {
