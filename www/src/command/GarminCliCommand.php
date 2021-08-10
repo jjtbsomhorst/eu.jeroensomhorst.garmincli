@@ -74,7 +74,7 @@ class GarminCliCommand extends Command
             $q = new ChoiceQuestion("Use these settings?",['yes','no'],'yes');
             $a = $helper->ask($input,$output,$q);
             if($a == 'yes'){
-                $this->doExport($input,$output);
+                return $this->doExport($input,$output);
             }
         }
         $question = new Question(sprintf("Please specify username. (Default %s):",$this->username),$this->username);
