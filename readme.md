@@ -9,7 +9,7 @@ package and an extended version of this (created by me).
 
 Added 'unattended' flag. This can be used when the configuration has been set to let the script run unattended.
 
-Simple add --u or --unattended and if the commands finds a settings.json, it uses this and starts exporting.
+Simple add -u or --unattended and if the commands finds a settings.json, it uses this and starts exporting.
 
 ***
 **update 09-08-2021**
