@@ -1,0 +1,1 @@
+docker exec -it eujeroensomhorstgarmincli_web_1 bash
