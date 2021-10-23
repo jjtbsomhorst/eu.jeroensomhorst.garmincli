@@ -5,7 +5,12 @@ export certain things from Garmin Connect. The package uses the dawguk/php-garmi
 package and an extended version of this (created by me). 
 
 ***
-**update 09-08-2021 **
+**update 23-10-2021**
+
+Added 'unattended' flag. This can be used when the configuration has been set to let the script run unattended.
+
+***
+**update 09-08-2021**
 
 Implementing setting functionality. Command will now ask for settings if now settings.json has been found. Next time 
 the code runs it will read this file and ask if everything is ok. If so executes. Otherwhise asks for new settings
